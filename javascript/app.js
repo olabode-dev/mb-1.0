@@ -98,6 +98,13 @@ function mbvoice(message) {
     if (message.includes('smart')) {
         speech.text = "I'm falttered, Bode did a pretty good job";
     }
+    if (message.includes('thank')) {
+        speech.text = "anytime boss";
+    }
+    if (message.includes('where are you')) {
+        speech.text = "look around, I am everywhere boss.";
+    }
+
     if (message.includes('where do you live')) {
         speech.text = "Look around, I am everywhere boss.";
     }
