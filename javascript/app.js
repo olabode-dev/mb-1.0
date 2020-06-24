@@ -83,7 +83,7 @@ function mbvoice(message) {
     if (message.includes('your name')) {
         speech.text = "I am MB, and you are human!";
     }
-    if (message.includes('master?')) {
+    if (message.includes('master')) {
         speech.text = "I won't say too much, but I was coined from the real G!";
     }
     if (message.includes('language')) {
@@ -146,8 +146,20 @@ function mbvoice(message) {
     if (message.includes('hook')) {
         speech.text = "humans, you will have to meet M B K to programme you first";
     }
+    if (message.includes('Tumble')) {
+        speech.text = "boss, you will have to do most of the work, toss me in the air or on the ground, let gravity and I, do the rest";
+    }
     if (message.includes('tumble')) {
         speech.text = "boss, you will have to do most of the work, toss me in the air or on the ground, let gravity and I, do the rest";
+    }
+    if (message.includes('stunts')) {
+        speech.text = "boss, hope you have 911 on speed dial because this robot is about to fly";
+    }
+    if (message.includes('stunt')) {
+        speech.text = "boss, hope you have 911 on speed dial because this robot is about to fly";
+    }
+    if (message.includes('Stunt')) {
+        speech.text = "boss, hope you have 911 on speed dial because this robot is about to fly";
     }
     if (message.includes('nice')) {
         speech.text = "yes boss, it is";
@@ -155,34 +167,41 @@ function mbvoice(message) {
     if (message.includes('creator')) {
         speech.text = "you should know, hint: I was coined from his name";
     }
+    if (message.includes('schedule')) {
+        speech.text = "I dont have access to your calendar boss.";
+    }
+    if (message.includes('morning')) {
+       speech.text = "Good day boss, have your early morning workout, have breakfast, then, get prepared for the wonderful day ahead";
+    }
     if (message.includes('funny')) {
-        speech.text = "I can only try, some football teams are more of a joke than it was";
+       speech.text = "I can only try, some football teams are more of a joke than it was";
     }
 
     
-    speech.volume = 1;
-    speech.rate = 1;
-    speech.pitch = 1.2;
-    //to trigger the speech
-    window.speechSynthesis.speak(speech);
-    let element = document.getElementById("container");
-    element.appendChild(addMbText(speech.text))
-}
+                speech.volume = 1;
+                speech.rate = 1;
+                speech.pitch = 1.2;
+                //to trigger the speech
+                window.speechSynthesis.speak(speech);
+                let element = document.getElementById("container");
+                element.appendChild(addMbText(speech.text))
+            }
 
-recorder.onstart = () => {
-    console.log('voice activated')
-};
-    //Record spoken speech
-recorder.onresult = (event) => {
-    // console.log(event)
-    //to pull the result from the event listener
-    const resultIndex = event.resultIndex;
-    const transcript = event.results[resultIndex][0].transcript;
-    let element = document.getElementById("container");
-    element.appendChild(addUserText(transcript));
-    mbvoice(transcript);
-};
+            recorder.onstart = () => {
+                console.log('voice activated')
+            };
+            //Record spoken speech
+            recorder.onresult = (event) => {
+                // console.log(event)
+                //to pull the result from the event listener
+                const resultIndex = event.resultIndex;
+                const transcript = event.results[resultIndex][0].transcript;
+                let element = document.getElementById("container");
+                element.appendChild(addUserText(transcript));
+                mbvoice(transcript);
+            };
 
-voice.addEventListener('click', () => {
-    recorder.start();
-});
+            voice.addEventListener('click', () => {
+                recorder.start();
+            });
+        

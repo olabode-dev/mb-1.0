@@ -46,11 +46,12 @@ body {
   /* Darker chat container */
   .darker {
     border-color: rgba(204, 204, 204, 0.884);
-    background-color: #47e6a9d0;
+    background-color: #c8cbe9e5;
   }
   
   .darker p {
-    background-color: #47e6a9d0;
+    background-color:#c8cbe9e5;
+    ;
   }
   
   /* Clear floats */
