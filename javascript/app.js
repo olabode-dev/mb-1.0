@@ -190,7 +190,7 @@ function mbvoice(message) {
        speech.text = "I can only try, some football teams are more of a joke than it was";
     }
     if (message.includes('mad')) {
-        speech.text = "mad ooh, Nigerians sha, how is a robot mad again.";
+        speech.text = "mad oh, Nigerians sha, how is a robot mad again.";
      }
 
     
