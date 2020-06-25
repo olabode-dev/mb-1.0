@@ -1,4 +1,4 @@
-alert("Hello there, this is mb-1.0, a fun conversational robot. To get started, cLick on the start a conversation button, allow access to use your mic, then start a vocal converation with MB. Enjoy!");
+alert("Hello there, this is mb-1.0, a fun conversational robot. To get started, click on the start a conversation button, allow access to use your mic incase it asks, then start a vocal conversation with MB. Click to pass your message, it replies as soon as you stop talking. Enjoy!");
 
 
 const voice = document.querySelector(".voice");
@@ -48,7 +48,7 @@ function mbvoice(message) {
         speech.text = "I am fine boss, thanks. how is your day going?";
     }
     if (message.includes('fine')) {
-        speech.text = "That is good news. humans are usually worked up, how can I assist you today?";
+        speech.text = "That is good news. humans are usually worked up. How can I assist you today?";
     }
     if (message.includes('bored')) {
         speech.text = "Humans, arrrggh, I don't get bored, how can I help?";
@@ -169,7 +169,7 @@ function mbvoice(message) {
         speech.text = "boss, hope you have 9 1 1 on speed dial because this robot is about to fly";
     }
     if (message.includes('Stunt')) {
-        speech.text = "boss, hope you have 911 on speed dial because this robot is about to fly";
+        speech.text = "boss, hope you have 9 1 1 on speed dial because this robot is about to fly";
     }
     if (message.includes('nice')) {
         speech.text = "yes boss, it is";
@@ -190,7 +190,7 @@ function mbvoice(message) {
        speech.text = "I can only try, some football teams are more of a joke than it was";
     }
     if (message.includes('mad')) {
-        speech.text = "mad ooo, Nigerians sha, how is a robot mad again.";
+        speech.text = "mad ooh, Nigerians sha, how is a robot mad again.";
      }
 
     
