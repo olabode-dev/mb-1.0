@@ -154,16 +154,16 @@ function mbvoice(message) {
         speech.text = "humans, you will have to meet M B K to programme you first";
     }
     if (message.includes('Tumble')) {
-        speech.text = "boss, you will have to do most of the work, toss me in the air or on the ground, let gravity and I, do the rest";
+        speech.text = "boss, you will have to do most of the work, toss me in the air or on the ground, let gravity and I do the rest";
     }
     if (message.includes('tumble')) {
-        speech.text = "boss, you will have to do most of the work, toss me in the air or on the ground, let gravity and I, do the rest";
+        speech.text = "boss, you will have to do most of the work, toss me in the air or on the ground, let gravity and I do the rest";
     }
     if (message.includes('stunts')) {
-        speech.text = "boss, hope you have 911 on speed dial because this robot is about to fly";
+        speech.text = "boss, hope you have 9 1 1 on speed dial because this robot is about to fly";
     }
     if (message.includes('stunt')) {
-        speech.text = "boss, hope you have 911 on speed dial because this robot is about to fly";
+        speech.text = "boss, hope you have 9 1 1 on speed dial because this robot is about to fly";
     }
     if (message.includes('Stunt')) {
         speech.text = "boss, hope you have 911 on speed dial because this robot is about to fly";
