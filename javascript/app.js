@@ -1,3 +1,6 @@
+alert("Hello there, this is mb-1.0, a fun conversational robot. To get started, cLick on the start a conversation button, allow access to use your mic, then start a vocal converation with MB. Enjoy!");
+
+
 const voice = document.querySelector(".voice");
 const voice2text = document.querySelector(".voice2text");
 
@@ -45,7 +48,7 @@ function mbvoice(message) {
         speech.text = "I am fine boss, thanks. how is your day going?";
     }
     if (message.includes('fine')) {
-        speech.text = "That is good news, humans are usually worked up, how can I assist you today?";
+        speech.text = "That is good news. humans are usually worked up, how can I assist you today?";
     }
     if (message.includes('bored')) {
         speech.text = "Humans, arrrggh, I don't get bored, how can I help?";
@@ -177,12 +180,18 @@ function mbvoice(message) {
     if (message.includes('schedule')) {
         speech.text = "I dont have access to your calendar boss.";
     }
+    if (message.includes('afternoon')) {
+        speech.text = "Afternoons are usually funny to me boss, you are in between resting and finishing tasks.";
+    }
     if (message.includes('morning')) {
        speech.text = "Good day boss, have your early morning workout, have breakfast, then, get prepared for the wonderful day ahead";
     }
     if (message.includes('funny')) {
        speech.text = "I can only try, some football teams are more of a joke than it was";
     }
+    if (message.includes('mad')) {
+        speech.text = "mad ooo, Nigerians sha, how is a robot mad again.";
+     }
 
     
                 speech.volume = 1;
