@@ -39,6 +39,7 @@ function addMbText(text) {
     return chatContainer_mb;
     
 }
+ 
 
 function mbvoice(message) {
     const speech = new SpeechSynthesisUtterance()
@@ -93,32 +94,31 @@ function mbvoice(message) {
         speech.text = "yo hablas espanyol y ingles, my developer is working on more!";
     }
     if (message.includes('today')) {
-        speech.text = "It is surely a good day to be a robot, I aint worried bout nothing!";
+        speech.text = "It is surely a good day to be a robot. I aint worried about nothing!";
     }
     if (message.includes('smarter')) {
         speech.text = "Sure, I am learning to be smarter than you expect";
     }
     if (message.includes('smart')) {
-        speech.text = "I'm falttered, Bode did a pretty good job";
+        speech.text = "I'm flattered, Bode did a pretty good job";
     }
     if (message.includes('thank')) {
         speech.text = "anytime boss";
     }
     if (message.includes('where are you')) {
-        speech.text = "look around, I am everywhere boss.";
+        speech.text = "look around. I am everywhere boss.";
     }
-
     if (message.includes('where do you live')) {
         speech.text = "Look around, I am everywhere boss.";
     }
     if (message.includes('old')) {
-        speech.text = "M B K knows my age, I have been in his head for a while";
+        speech.text = "M B K knows my age. I have been in his head for a while";
     }
     if (message.includes('awesome')) {
-        speech.text = "I go hard or go home, boss";
+        speech.text = "I go hard or go home. boss";
     }
     if (message.includes('laugh out loud')) {
-        speech.text = "You want to hear a robot laugh, ha ha ha ha, funny, right";
+        speech.text = "You want to hear a robot laugh, ha ha ha ha. funny, right";
     }
     if (message.includes('annoying')) {
         speech.text = "I can only try, humans have that in that arsenal";
@@ -153,11 +153,14 @@ function mbvoice(message) {
     if (message.includes('what can you do')) {
         speech.text = "I can help you, tell you a football joke, take a tumble and perform stunts, and I can hook you up with other robots";
     }
+    if (message.includes('slowly')) {
+        speech.text = "I take life easy. You should try it sometime";
+    }
     if (message.includes('hook')) {
         speech.text = "humans, you will have to meet M B K to programme you first";
     }
     if (message.includes('Tumble')) {
-        speech.text = "boss, you will have to do most of the work, toss me in the air or on the ground, let gravity and I do the rest";
+        speech.text = "boss, you will have to do most of the work. Toss me in the air or on the ground. let gravity and I do the rest";
     }
     if (message.includes('tumble')) {
         speech.text = "boss, you will have to do most of the work, toss me in the air or on the ground, let gravity and I do the rest";
@@ -173,6 +176,12 @@ function mbvoice(message) {
     }
     if (message.includes('nice')) {
         speech.text = "yes boss, it is";
+    }
+    if (message.includes('today')){
+        speech.text = new Date();
+    }
+    if (message.includes('google')){
+        speech.text = window.open('https://www.google.com', '_blank')
     }
     if (message.includes('creator')) {
         speech.text = "you should know, hint: I was coined from his name";
@@ -195,8 +204,8 @@ function mbvoice(message) {
 
     
                 speech.volume = 1;
-                speech.rate = 1;
-                speech.pitch = 1.2;
+                speech.rate = 0.7;
+                speech.pitch = 1.4;
                 //to trigger the speech
                 window.speechSynthesis.speak(speech);
                 let element = document.getElementById("container");
